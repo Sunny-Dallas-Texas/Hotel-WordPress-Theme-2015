@@ -278,12 +278,15 @@ this contains both the content and the sidebar
     float: left;
     width: 75%;
     /*================================================ */
-    -webkit-flex: 2 75%;
-    -ms-flex: 2 75%;
-    flex: 2 75%;
+    -webkit-flex: 1 auto;
+    -ms-flex: 1 auto;
+    flex: 1 auto;
     padding-right: 5%;
     margin-top: 5%; }
     @media (max-width: 940px) {
+      .flexbox #primary {
+        width: 100%; } }
+    @media (max-width: 568px) {
       .flexbox #primary {
         width: 100%; } }
   .flexbox #secondary {
@@ -293,11 +296,17 @@ this contains both the content and the sidebar
     float: right;
     width: 25%;
     /*================================================ */
-    -webkit-flex: 1 25%;
-    -ms-flex: 1 25%;
-    flex: 1 25%;
+    -webkit-flex: 1 auto;
+    -ms-flex: 1 auto;
+    flex: 1 auto;
     margin-top: 5%; }
     @media (max-width: 940px) {
+      .flexbox #secondary {
+        width: 100%; } }
+    @media (max-width: 568px) {
+      .flexbox #secondary {
+        width: 100%; } }
+    @media (max-width: 480px) {
       .flexbox #secondary {
         width: 100%; } }
 
@@ -1573,17 +1582,25 @@ section.about.promo {
         -webkit-flex: 1 100%;
         -ms-flex: 1 100%;
         flex: 1 100%;
+        -webkit-flex: 1 auto;
+        -ms-flex: 1 auto;
+        flex: 1 auto;
         margin-bottom: 10%; } }
     @media (max-width: 414px) {
       section.about.promo .promobox {
         -webkit-flex: 1 100%;
         -ms-flex: 1 100%;
         flex: 1 100%;
+        -webkit-flex: 1 auto;
+        -ms-flex: 1 auto;
+        flex: 1 auto;
         margin-bottom: 10%; } }
   section.about.promo .promobox .imgFrame {
     -webkit-flex: 1 25%;
     -ms-flex: 1 25%;
     flex: 1 25%; }
+    section.about.promo .promobox .imgFrame img {
+      max-width: 100%; }
     @media (max-width: 480px) {
       section.about.promo .promobox .imgFrame {
         -webkit-flex: 1 100%;
@@ -1622,12 +1639,18 @@ section.suites.promo .promobox {
       -webkit-flex: 1 100%;
       -ms-flex: 1 100%;
       flex: 1 100%;
+      -webkit-flex: 1 auto;
+      -ms-flex: 1 auto;
+      flex: 1 auto;
       margin-bottom: 5%; } }
   @media (max-width: 414px) {
     section.suites.promo .promobox {
       -webkit-flex: 1 100%;
       -ms-flex: 1 100%;
       flex: 1 100%;
+      -webkit-flex: 1 auto;
+      -ms-flex: 1 auto;
+      flex: 1 auto;
       margin-bottom: 5%; } }
 
 section.suites.promo .promobox h2 {
@@ -1656,6 +1679,8 @@ section.suites.promo .promobox .imgFrame {
   -moz-transition: all 1s ease-in;
   -o-transition: all 1s ease-in;
   -ms-transition: all 1s ease-in; }
+  section.suites.promo .promobox .imgFrame img {
+    max-width: 100%; }
 
 section.suites.promo .promobox .imgFrame:hover > .playFrame {
   display: -webkit-flex;
@@ -2743,7 +2768,10 @@ footer.site-footer .site-info {
     flex: 1 33%; }
     @media (max-width: 480px) {
       footer.site-footer .site-info aside.copyright, footer.site-footer .site-info aside.socialIcons, footer.site-footer .site-info nav {
-        width: 100%; } }
+        width: 100%;
+        -webkit-flex: 1 auto;
+        -ms-flex: 1 auto;
+        flex: 1 auto; } }
   footer.site-footer .site-info aside.socialIcons {
     display: -webkit-flex;
     display: -ms-flexbox;

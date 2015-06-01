@@ -14,16 +14,21 @@ section.suites.promo {
 	// padding-top: 5%;
 
 	.promobox {
+
+		// max-width: 100%;
+
 		// flex child
 		flex: 1 28%;
 
 		@include phoneR {
 			flex: 1 100%;
+			flex: 1 auto;
 			margin-bottom: 5%;
 		}
 	
 		@include iphone6Plus414R {
 			flex: 1 100%;
+			flex: 1 auto;
 			margin-bottom: 5%;
 		}
 	}
@@ -39,6 +44,10 @@ section.suites.promo {
 		@include flexboxColumn1;
 
 		@include transitionEffectAllEaseIn(1s);
+
+		img {
+			max-width: 100%;
+		}
 	}
 
 	.promobox .imgFrame:hover > .playFrame {

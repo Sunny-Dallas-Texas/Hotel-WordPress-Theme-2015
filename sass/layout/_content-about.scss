@@ -19,17 +19,22 @@ section.about.promo {
 	align-items: flex-start;
 
 	.promobox {
+
+		// max-width: 100%;
+
 		@include flexboxRow1;
 		align-items: flex-start;
 		margin-bottom: 4%;
 
 		@include phoneR {
 			flex: 1 100%;
+			flex: 1 auto;
 			margin-bottom: 10%;
 		}
 
 		@include iphone6Plus414R {
 			flex: 1 100%;
+			flex: 1 auto;
 			margin-bottom: 10%;
 		}
 	}
@@ -37,6 +42,10 @@ section.about.promo {
 	.promobox .imgFrame {
 		//flex child
 		flex: 1 25%;
+
+		img {
+			max-width: 100%;
+		}
 
 		@include phoneR {
 			//flex child

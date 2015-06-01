@@ -40,8 +40,16 @@ footer.site-footer .site-info {
 	aside.copyright,aside.socialIcons,nav {
 		// flex child
 		flex: 1 33%;
+
 		@include phoneR {
-		  width: 100%;
+		  	width: 100%;
+
+			// on iOS Safari
+			// especially iPhone 4S...  these 3 elements are squished together like a sandwich
+			// @include sectionMargins041515(5%,5%);
+			
+			flex: 1 auto;
+
 		}
 	}
 
